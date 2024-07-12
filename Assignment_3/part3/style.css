@@ -1,0 +1,161 @@
+/* General setup */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+/*
+Name: Akmal Hameed
+File: style.css
+Date: 7/12/2024
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Serif', serif;
+  font-size: 16px;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 2.2em; 
+  letter-spacing: 1px; 
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em; /
+  letter-spacing: 1px; 
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em; 
+  letter-spacing: 1px; 
+}
+p {
+  line-height: 1.5; 
+  letter-spacing: 0.5px; 
+}
+
+section p:first-child {
+  text-indent: 20px; 
+}
+
+a {
+  color: #336699; /* Regular link color */
+  text-decoration: underline;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:active {
+  color: #CC3333; /* Active link color */
+}
+
+a[href*="http://"]:after {
+  content: "\0203A"; 
+  margin-left: 5px;
+  color: #336699; /* Match the regular link color */
+}
+
+ul, ol {
+  margin: 15px 0; 
+  padding: 0;
+}
+
+li {
+  line-height: 1.5; /* Match line-height with body text */
+}
+
+ul li::marker {
+  content: "•"; 
+  color: #a66; 
+  font-size: 1.2em; 
+  margin-right: 10px; /* Adjust spacing as needed */
+}
+
+/* Navigation Menu Styles */
+nav {
+  background-color: #eee; /* Light gray background */
+  border: 1px solid #ccc; /* Light gray border */
+  padding: 10px;
+  height: 100vh; /* Set height to 100% viewport height */
+  width: 20%; /* Adjust width as needed for your design */
+}
+
+nav ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: block; /* Makes the entire list item clickable */
+  margin: 10px 0; /* Spacing between menu items */
+  text-align: center; /* Center text within menu items */
+  width: calc(100% / number-of-menu-items); /* Adjust for # of items */
+}
+
+nav a {
+  display: block; /* Makes the entire list item clickable */
+  padding: 10px; /* Padding for menu item text */
+  color: black; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for emphasis (optional) */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: #ddd; /* Light gray background on hover */
+}
+
+footer {
+  clear: both; /* Clear floats after the floated elements */
+}
+nav li {
+  border: 1px solid #ccc; /* Light gray border for each box */
+}
+
